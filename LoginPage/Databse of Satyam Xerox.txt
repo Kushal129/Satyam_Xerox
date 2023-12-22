@@ -1,0 +1,34 @@
+//Databse of Satyam Xerox
+
+tbl_login:- 
+
+    CREATE TABLE [dbo].[tbl_login] (
+    [id]       INT          IDENTITY (1, 1) NOT NULL,
+    [username] VARCHAR (30) NULL,
+    [password] VARCHAR (50) NULL,
+    CONSTRAINT [PK_tbl_login] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+
+---------------------------------------------------------------------------------
+
+
+tbl_admindata :-
+
+   CREATE TABLE [dbo].[tbl_admindata] (
+    [name]           CHAR (80)     NULL,
+    [phonenumber]    BIGINT        NOT NULL,
+    [date]           VARCHAR (50)  NULL,
+    [work]           VARCHAR (50)  NULL,
+    [payment]        VARCHAR (50)  NULL,
+    [amount]         FLOAT (53)    NULL,
+    [total]          FLOAT (53)    NULL,
+    [payment_status] VARCHAR (50)  NULL,
+    [note]           VARCHAR (250) NULL,
+    CONSTRAINT [PK_tbl_admindata] PRIMARY KEY CLUSTERED ([phonenumber] ASC)
+);
+
+
+
+
+	
